@@ -1,0 +1,196 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width,initial-scale-1.0">
+        <meta name="author" content="Victoria">
+        <meta name="description" content="This is ABC website">
+        <title>ABC Resturant</title>
+        <link rel="icon" href="img/icon.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+
+            <h1>ABC Resturant</h1>
+            <nav>
+                <li><a href="about">About Us</a></li>
+                <li><a href="#hours">Opening Hours</a></li>
+                <li><a href="#ourmenu">Our Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </nav>
+        </header>
+
+        <main>
+            
+            <img src="img/main.jpg" alt="" width="300" height="250">
+
+            <article id="about">
+
+                <h2>About Us</h2>
+                <p>The ABC Resturant was founded by James in <time datetime="2020"><strong>2020</strong>.</time><br>It offer Typical and International food.</p>
+
+            </article>
+
+            <br>
+
+            <article id="hours">
+
+                <h2>Opening Hours</h2>
+                <p>We are open from Monday to Friday from <time datetime="8:00">8:00 AM</time> to <time datetime="10:00">10:00 PM</time> . <br> On Saturdays and Sundays from <time datetime="12:00">12 PM</time> to <time datetime="11:00">11 PM</time>.</p>
+
+            </article>
+
+            <br>
+
+            <article id="ourmenu">
+
+                <h2>Sample for Our Menu</h2>
+                <table>
+                    <caption>ABC Menu</caption>
+                   <thead>
+                    <tr>
+                        <th colspan="2">Main & Drinks</th>
+                        <th>Price</th>
+                    </tr>
+                   </thead>
+
+                   <tbody>
+                    <tr>
+                        <td rowspan="2">Burger</td>
+                        <td>Cheese Burgers</td>
+                        <td>10,000 SSP</td>
+                        <td colspan="2"><img src="/img/Smashburger.jpg" alt="Smash Burger" width="50" height="50"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>Chicken Burger</td>
+                        <td>15,000 SSP</td>
+                        <td colspan="2"><img src="img/Chicken Burgers.jpg" alt="Chicken Burger" width="50" height="50"></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Pizzas</td>
+                        <td>Cheese Pizza</td>
+                        <td>12,000 SSP</td>
+                        <td><img src="img/Cheese Pizza.jpg" alt="Cheese Pizza" width="50" height="50"></td>
+                        
+
+                    </tr>
+
+                    <tr>
+                        <td>Pizza Pepperone</td>
+                        <td>18,000 SSP</td>
+                        <td colspan="2"><img src="img/Pizza Pepperone.jpg" alt="Pizza Pepperone" width="50" height="50"></td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="5">Beverages</td>
+                        <td>Iced Tea</td>
+                        <td>5,000 SSP</Td>
+                        <td rowspan="5" ><img src="img/Drinks.png" alt="Drinks" width ="50" ></td>
+                    </tr>
+
+                    <tr>
+                        <td>Lemon Tea</td>
+                        <td>4,000 SSP</td>
+                    </tr>
+
+                    <tr>
+                        <td>Orange Juice</td>
+                        <td>8,000 SSP</td>
+                    </tr>
+
+                    <tr>
+                        <td>Coffee</td>
+                        <td>3,000 SSP</td>
+                    </tr>
+
+                    <tr>
+                        <td>Milk Shake</td>
+                        <td>10,000 SSP</td>
+                    </tr>
+
+                   </tbody>
+
+                   <tfoot>
+                    
+                   </tfoot>
+                </table>
+          </article>
+
+          <br><br>
+
+
+          <article id="reservation">
+            <form action="post">
+                <fieldset>
+                    <legend>For Reservation</legend>
+
+                    <p>
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" name="fullName" id="fullName" placeholder="Writer your full name" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" placeholder="Write your email" required>
+                    </p>
+
+                    <p>
+                        
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    <p>
+                        <label for="place">Prefered Place</label>
+                        <select name="place" id="place">
+                            <option value="inside">Inside</option>
+                            <option value="outside">Outside</option>
+                        </select>
+                    </p>
+                    <label for="order">Your Order</label>
+                    <select name="order" id="order" multiple size="15">
+                        <optgroup label="Main Course">
+                            <option value="cheese burger">Cheese Burger</option>
+                            <option value="chicken burger">Chicken Burger</option>
+                            <option value="spicy chicken">Spicy Chicken</option>
+                            <option value="chicken sandwich">Chicken Sandwich</option>
+                            <option value="pizza pepperone">Pizza Pepperone</option>
+                            <option value="cheese pizza">Cheese Pizza</option>
+                            <option value="hot dog">Hot Dog</option>
+                           
+                        </optgroup>
+
+                        <optgroup label="Appetizer">
+                            <option value="fruit salad">Fruit Salad</option>
+                            <option value="cocktail">Cocktail</option>
+                            <option value="nuggets">Nuggets</option>
+                        </optgroup>
+
+
+
+                        <optgroup label="Alcoholic Drinks">
+                            <option value="white wine">White Wine</option>
+                            <option value="beer">Beer</option>
+                            <option value="whisky">Whisky</option>
+                        </optgroup>
+                    </select>
+
+                    </p>
+                </fieldset>
+            </form>
+            
+          </article>
+       </main>
+
+        <hr><hr>
+
+        <footer>
+            <p>&lt;&lt;&lt;&copy;Victoria John&gt;&gt;&gt; 2025</p>
+            <p><a href="/">Back to top</a></p>
+
+        </footer>
+    </body>
+</html>
